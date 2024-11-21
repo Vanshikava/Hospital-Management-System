@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Appointments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Management System</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register Patient</a>
+            <a href="appointments.html">Manage Appointments</a>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2>Manage Appointments</h2>
+        <form action="appointments.php" method="POST">
+            <label for="patient_id">Patient ID:</label>
+            <input type="text" id="patient_id" name="patient_id" required>
+
+            <label for="appointment_date">Appointment Date:</label>
+            <input type="date" id="appointment_date" name="appointment_date" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+</body>
+</html>
